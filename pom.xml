@@ -6,7 +6,18 @@
 
     <groupId>com.lyq3</groupId>
     <artifactId>BigBoot</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>BigBoot-common</module>
+        <module>BigBoot-sso</module>
+        <module>BigBoot-ui</module>
+        <module>BigBoot-im</module>
+        <module>BigBoot-cms</module>
+        <module>BigBoot-api</module>
+        <module>BigBoot-config</module>
+        <module>BigBoot-wechat</module>
+    </modules>
 
 
 </project>
