@@ -17,6 +17,7 @@
         <module>BigBoot-api</module>
         <module>BigBoot-config</module>
         <module>BigBoot-wechat</module>
+        <module>BigBoot-upms</module>
     </modules>
 
 
