@@ -11,7 +11,7 @@ spring:
         driverClassName: com.mysql.jdbc.Driver
         url: jdbc:mysql://182.61.60.110:3333/test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
         username: root
-        password: 123456
+        password: ENC(FYyYoP/7ILpRJpAxfJoUeMvJA5Sp39RM)
         druid:
             initial-size: 10
             max-active: 100

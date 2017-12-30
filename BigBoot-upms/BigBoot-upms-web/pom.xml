@@ -11,5 +11,13 @@
 
     <artifactId>BigBoot-upms-web</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.lyq3</groupId>
+            <artifactId>BigBoot-upms-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
