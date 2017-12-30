@@ -129,7 +129,7 @@ public class AESUtil {
     }
 
     public static void main(String[] args) {
-        String key = "123456";
+        String key = "123456";//输入你需要加密的文本
         System.out.println("key | AESEncode | AESDecode");
             System.out.print(key + " | ");
             String encryptString = aesEncode(key);
