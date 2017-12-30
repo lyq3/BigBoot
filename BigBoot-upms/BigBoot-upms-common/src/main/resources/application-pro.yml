@@ -37,10 +37,3 @@ spring:
                 wall:
                     config:
                         multi-statement-allow: true
-
-#系统变量配置
-sys:
-    const:
-          webserviceUrl: http://12366.sc-l-tax.gov.cn/thirdparty/webservices/sfjrService?wsdl
-          webserviceUsername: cnct
-          webservicePassword: 40WU5A3R47

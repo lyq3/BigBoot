@@ -39,9 +39,3 @@ spring:
                     config:
                         multi-statement-allow: true
 
-#系统变量配置
-sys:
-    const:
-          webserviceUrl: http://182.151.197.163:9011/thirdparty/webservices/sfjrService?wsdl
-          webserviceUsername: frse
-          webservicePassword: 123456
