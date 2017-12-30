@@ -9,8 +9,8 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
         url: jdbc:mysql://rm-wz96946g3d661hv43.mysql.rds.aliyuncs.com:3306/ds_wt?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-        username: wechat
-        password: 1234
+        username:
+        password:
         druid:
             initial-size: 10
             max-active: 100

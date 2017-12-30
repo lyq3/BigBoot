@@ -52,3 +52,8 @@ mybatis-plus:
     #自定义SQL注入器
     #sql-injector: com.baomidou.springboot.xxx
 #环境参数
+
+#加密盐
+jasypt:
+  encryptor:
+    password: BigBoot
