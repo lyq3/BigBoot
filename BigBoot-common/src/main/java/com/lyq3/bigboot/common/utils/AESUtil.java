@@ -18,7 +18,7 @@ import java.security.SecureRandom;
  */
 public class AESUtil {
 
-    private static final String ENCODE_RULES = "";
+    private static final String ENCODE_RULES = "lyq";
 
     /**
      * 加密
