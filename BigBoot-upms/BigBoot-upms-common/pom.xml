@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>BigBoot</artifactId>
+        <artifactId>BigBoot-upms</artifactId>
         <groupId>com.lyq3</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>BigBoot-upms</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>BigBoot-upms-dao</module>
-        <module>BigBoot-upms-api</module>
-        <module>BigBoot-upms-service</module>
-        <module>BigBoot-upms-web</module>
-        <module>BigBoot-upms-common</module>
-    </modules>
+    <artifactId>BigBoot-upms-common</artifactId>
 
 
 </project>
