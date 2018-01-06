@@ -17,4 +17,6 @@
     <!-- 系统 -->
    <!-- <dubbo:reference id="upmsSystemService" interface="com.zheng.upms.rpc.api.UpmsSystemService" mock="true"/>-->
 
+    <!-- 使用注解方式暴露接口 -->
+    <dubbo:annotation package="com.lyq3.bigboot.upms.web" />
 </beans>
