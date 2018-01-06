@@ -7,17 +7,13 @@
         http://code.alibabatech.com/schema/dubbo
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="bigboot-upms-service"/>
+    <dubbo:application name="bigboot-upms-service" owner = "upms"/>
 
-    <dubbo:registry address="zookeeper://119.23.252.177:2181"/>
+    <dubbo:registry address="zookeeper://${zookeeper.url}:${zookeeper.port}"/>
 
     <dubbo:protocol name="dubbo" port="20881"/>
 
     <!--<dubbo:monitor protocol="registry"/>-->
-
-    <!-- 系统 -->
-    <!--<bean id="upmsSystemService" class="com.zheng.upms.rpc.service.impl.UpmsSystemServiceImpl"/>-->
-    <!--<dubbo:service interface="com.lyq3.bigboot.upms.api.DubboTestApi" ref="dubooServiceTest" timeout="10000"/>-->
 
     <!-- 使用注解方式暴露接口 -->
     <dubbo:annotation package="com.lyq3.bigboot.upms.service" />

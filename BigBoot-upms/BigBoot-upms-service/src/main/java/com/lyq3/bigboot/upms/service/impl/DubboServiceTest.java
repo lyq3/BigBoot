@@ -1,4 +1,4 @@
-package com.lyq3.bigboot.upms.service;
+package com.lyq3.bigboot.upms.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.lyq3.bigboot.upms.api.DubboTestApi;

@@ -39,3 +39,7 @@ spring:
                     config:
                         multi-statement-allow: true
 
+#Zookeeper连接信息
+zookeeper:
+          url: 119.23.252.177
+          port: 2181

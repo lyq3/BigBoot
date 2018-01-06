@@ -7,7 +7,7 @@
         http://code.alibabatech.com/schema/dubbo
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
 
-    <dubbo:application name="bigboot-upms-web"/>
+    <dubbo:application name="bigboot-upms-web" owner = "upms"/>
 
     <dubbo:registry file="./bigboot-upms-web-dubbo.cache" address="zookeeper://119.23.252.177:2181"/>
 
