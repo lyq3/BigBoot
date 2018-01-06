@@ -4,11 +4,15 @@ server:
         max-threads: 1000
         min-spare-threads: 30
     port: 9090
+#Zookeeper连接信息
+zookeeper:
+          url: 119.23.252.177
+          port: 2181
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://rm-wz96946g3d661hv43.mysql.rds.aliyuncs.com:3306/ds_wt?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+        url: jdbc:mysql://182.61.60.110:3333/big-boot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
         username:
         password:
         druid:
