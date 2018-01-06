@@ -9,9 +9,9 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://182.61.60.110:3333/test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-        username: root
-        password: ENC(FYyYoP/7ILpRJpAxfJoUeMvJA5Sp39RM)
+        url: jdbc:mysql://182.61.60.110:3333/big-boot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+        username: bigBoot
+        password: ENC(qiGXbSKkn9Lzf3pTrui2tMK0qlG0+3+V)
         druid:
             initial-size: 10
             max-active: 100
