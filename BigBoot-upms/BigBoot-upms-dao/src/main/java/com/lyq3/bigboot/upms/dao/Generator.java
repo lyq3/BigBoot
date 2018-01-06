@@ -41,8 +41,7 @@ public class Generator {
         dataSourceConfig  .setPassword("bigboot123456");
         dataSourceConfig   .setDriverName("com.mysql.jdbc.Driver");
         StrategyConfig strategyConfig = new StrategyConfig();
-        strategyConfig
-                .setCapitalMode(true);
+        strategyConfig.setCapitalMode(true);
 //        strategyConfig  .setEntityLombokModel(false);
         strategyConfig  .setDbColumnUnderline(true);
         strategyConfig   .setNaming(NamingStrategy.underline_to_camel);
@@ -51,7 +50,7 @@ public class Generator {
         config.setActiveRecord(true);
         config  .setAuthor(AUTHOR);
         config  .setOutputDir(OUTPUTDIR);
-        config  .setFileOverride(true);
+//        config  .setFileOverride(true);
         AutoGenerator autoGenerator = new AutoGenerator();
         autoGenerator.setGlobalConfig(config);
         autoGenerator.setDataSource(dataSourceConfig);
@@ -63,7 +62,7 @@ public class Generator {
         TemplateConfig tc = new TemplateConfig();
         //以下模块不生成
         tc.setController(null);
-        tc.setXml(null);
+//        tc.setXml(null);
         tc.setService(null);
         tc.setServiceImpl(null);
         autoGenerator .setPackageInfo( packageConfig);
