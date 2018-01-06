@@ -45,6 +45,7 @@
         <thymeleaf-layout-dialect.version>2.0.0</thymeleaf-layout-dialect.version>
         <dubbo.version>2.5.8</dubbo.version>
         <jasypt.version>1.16</jasypt.version>
+        <velocity.version>1.7</velocity.version>
     </properties>
 
     <dependencies>
@@ -202,6 +203,12 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.1</version>
+        </dependency>
+        <!--模板引擎（用于生成代码）-->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
         </dependency>
     </dependencies>
 
