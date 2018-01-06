@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = { "com.lyq3" })
-@ImportResource(locations = {"classpath:*.xml"})
+@ImportResource(locations = {"classpath:xmlConfig/*.xml"})
 public class UpmsWebApplication extends SpringBootServletInitializer {
     private static final Logger logger = LoggerFactory.getLogger(UpmsWebApplication.class);
     public static void main(String[] args) {

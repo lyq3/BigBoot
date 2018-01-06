@@ -9,13 +9,10 @@
 
     <dubbo:application name="bigboot-upms-web" owner = "upms"/>
 
-    <dubbo:registry file="./bigboot-upms-web-dubbo.cache" address="zookeeper://119.23.252.177:2181"/>
+    <dubbo:registry file="./bigboot-upms-web-dubbo.cache" address="zookeeper://${zookeeper.url}:${zookeeper.port}"/>
 
     <!-- 订阅服务 -->
     <dubbo:consumer check="false"/>
-
-    <!-- 系统 -->
-   <!-- <dubbo:reference id="upmsSystemService" interface="com.zheng.upms.rpc.api.UpmsSystemService" mock="true"/>-->
 
     <!-- 使用注解方式暴露接口 -->
     <dubbo:annotation package="com.lyq3.bigboot.upms.web" />
