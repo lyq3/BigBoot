@@ -1,10 +1,7 @@
 package com.lyq3.bigboot.upms.dao;
 
 import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import com.baomidou.mybatisplus.generator.config.GlobalConfig;
-import com.baomidou.mybatisplus.generator.config.PackageConfig;
-import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
@@ -20,7 +17,16 @@ public class Generator {
     private static String PACKAGENAME = "com.lyq3.bigboot.upms.dao";
 
     public static void main(String[] args) {
-        String[] tableNames = {"upms_user"};//需要生成代码的表名
+        String[] tableNames = {"upms_user",
+                "upms_log",
+                "upms_organization",
+                "upms_persission",
+                "upms_role_permission",
+                "upms_system",
+                "upms_user_organization",
+                "upms_user_persission",
+                "upms_user_role",
+                "upms_role"};//需要生成代码的表名
         generateByTables(PACKAGENAME, tableNames);
     }
 
@@ -41,24 +47,27 @@ public class Generator {
         strategyConfig  .setDbColumnUnderline(true);
         strategyConfig   .setNaming(NamingStrategy.underline_to_camel);
         strategyConfig  .setInclude(tableNames);
-        config.setActiveRecord(false);
+        strategyConfig.setEntityBuilderModel(true);
+        config.setActiveRecord(true);
         config  .setAuthor(AUTHOR);
         config  .setOutputDir(OUTPUTDIR);
-//        config  .setFileOverride(true);
+        config  .setFileOverride(true);
         AutoGenerator autoGenerator = new AutoGenerator();
         autoGenerator.setGlobalConfig(config);
         autoGenerator.setDataSource(dataSourceConfig);
         autoGenerator .setStrategy(strategyConfig);
+        //包设置
         PackageConfig packageConfig = new PackageConfig();
         packageConfig.setParent(packageName);
-//        packageConfig.setController(null);//不生成controller
-//        packageConfig.setEntity("entity");
-//        packageConfig.setService(null);//不生成service
-//        packageConfig.setServiceImpl(null);//不生成serviceimpl
-        packageConfig.setXml(null);//不生成XML
-        autoGenerator .setPackageInfo(
-                packageConfig
-        );
+        //模板设置
+        TemplateConfig tc = new TemplateConfig();
+        //以下模块不生成
+        tc.setController(null);
+        tc.setXml(null);
+        tc.setService(null);
+        tc.setServiceImpl(null);
+        autoGenerator .setPackageInfo( packageConfig);
+        autoGenerator.setTemplate(tc);
         autoGenerator.execute();
     }
 }

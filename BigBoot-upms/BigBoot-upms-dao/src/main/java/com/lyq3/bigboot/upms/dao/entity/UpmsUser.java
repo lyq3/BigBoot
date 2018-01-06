@@ -1,6 +1,7 @@
 package com.lyq3.bigboot.upms.dao.entity;
 
 import java.util.Date;
+import com.baomidou.mybatisplus.activerecord.Model;
 import java.io.Serializable;
 
 /**
@@ -11,7 +12,7 @@ import java.io.Serializable;
  * @author 卡卢比
  * @since 2018-01-06
  */
-public class UpmsUser implements Serializable {
+public class UpmsUser extends Model<UpmsUser> {
 
     private static final long serialVersionUID = 1L;
 
@@ -63,96 +64,113 @@ public class UpmsUser implements Serializable {
 		return userId;
 	}
 
-	public void setUserId(Integer userId) {
+	public UpmsUser setUserId(Integer userId) {
 		this.userId = userId;
+		return this;
 	}
 
 	public String getUsername() {
 		return username;
 	}
 
-	public void setUsername(String username) {
+	public UpmsUser setUsername(String username) {
 		this.username = username;
+		return this;
 	}
 
 	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(String password) {
+	public UpmsUser setPassword(String password) {
 		this.password = password;
+		return this;
 	}
 
 	public String getSalt() {
 		return salt;
 	}
 
-	public void setSalt(String salt) {
+	public UpmsUser setSalt(String salt) {
 		this.salt = salt;
+		return this;
 	}
 
 	public String getRealname() {
 		return realname;
 	}
 
-	public void setRealname(String realname) {
+	public UpmsUser setRealname(String realname) {
 		this.realname = realname;
+		return this;
 	}
 
 	public String getNickname() {
 		return nickname;
 	}
 
-	public void setNickname(String nickname) {
+	public UpmsUser setNickname(String nickname) {
 		this.nickname = nickname;
+		return this;
 	}
 
 	public String getAvatar() {
 		return avatar;
 	}
 
-	public void setAvatar(String avatar) {
+	public UpmsUser setAvatar(String avatar) {
 		this.avatar = avatar;
+		return this;
 	}
 
 	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(String phone) {
+	public UpmsUser setPhone(String phone) {
 		this.phone = phone;
+		return this;
 	}
 
 	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(String email) {
+	public UpmsUser setEmail(String email) {
 		this.email = email;
+		return this;
 	}
 
 	public Integer getSex() {
 		return sex;
 	}
 
-	public void setSex(Integer sex) {
+	public UpmsUser setSex(Integer sex) {
 		this.sex = sex;
+		return this;
 	}
 
 	public Integer getStatus() {
 		return status;
 	}
 
-	public void setStatus(Integer status) {
+	public UpmsUser setStatus(Integer status) {
 		this.status = status;
+		return this;
 	}
 
 	public Date getCreatetime() {
 		return createtime;
 	}
 
-	public void setCreatetime(Date createtime) {
+	public UpmsUser setCreatetime(Date createtime) {
 		this.createtime = createtime;
+		return this;
+	}
+
+	@Override
+	protected Serializable pkVal() {
+		return this.userId;
 	}
 
 }
