@@ -51,10 +51,10 @@ public class Generator {
         autoGenerator .setStrategy(strategyConfig);
         PackageConfig packageConfig = new PackageConfig();
         packageConfig.setParent(packageName);
-        packageConfig.setController(null);//不生成controller
+//        packageConfig.setController(null);//不生成controller
 //        packageConfig.setEntity("entity");
-        packageConfig.setService(null);//不生成service
-        packageConfig.setServiceImpl(null);//不生成serviceimpl
+//        packageConfig.setService(null);//不生成service
+//        packageConfig.setServiceImpl(null);//不生成serviceimpl
         packageConfig.setXml(null);//不生成XML
         autoGenerator .setPackageInfo(
                 packageConfig
