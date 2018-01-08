@@ -36,23 +36,26 @@ public class UniteResult<T>{
         return code;
     }
 
-    public void setCode(int code) {
+    public UniteResult<T> setCode(int code) {
         this.code = code;
+        return this;
     }
 
     public String getMsg() {
         return msg;
     }
 
-    public void setMsg(String msg) {
+    public UniteResult<T> setMsg(String msg) {
         this.msg = msg;
+        return this;
     }
 
     public T getData() {
         return data;
     }
 
-    public void setData(T data) {
+    public UniteResult<T> setData(T data) {
         this.data = data;
+        return this;
     }
 }
