@@ -1,7 +1,5 @@
 package com.lyq3.bigboot.common.base;
 
-import java.io.Serializable;
-
 /**
  * 统一响应结果
  * @author 卡卢比
