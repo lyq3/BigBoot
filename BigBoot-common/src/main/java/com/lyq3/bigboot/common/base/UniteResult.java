@@ -7,9 +7,9 @@ import java.io.Serializable;
  * @author 卡卢比
  */
 public class UniteResult<T>{
-    private static final int SUCCESS = 1;
-    private static final int ERROR = -1;
-    private static final int NO_PERMISSIONS = 0;
+    public static final int SUCCESS = 1;
+    public static final int ERROR = -1;
+    public static final int NO_PERMISSIONS = 0;
     /**响应代码*/
     private int code = SUCCESS;
     /**响应信息*/
@@ -17,16 +17,19 @@ public class UniteResult<T>{
     /**返回数据*/
     private T data;
 
-    public static int getSUCCESS() {
-        return SUCCESS;
+    public UniteResult() {
+        super();
+    }
+    public UniteResult(T data) {
+        super();
+        this.data = data;
     }
 
-    public static int getERROR() {
-        return ERROR;
-    }
-
-    public static int getNoPermissions() {
-        return NO_PERMISSIONS;
+    public UniteResult(int code, String msg, T data) {
+        super();
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
     }
 
     public int getCode() {
