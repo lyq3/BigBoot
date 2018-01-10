@@ -6,7 +6,7 @@ import java.lang.annotation.*;
  * HTTP调用注解
  * @author 卡卢比
  */
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface Http {
