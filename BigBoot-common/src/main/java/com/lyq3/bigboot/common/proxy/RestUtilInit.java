@@ -24,6 +24,7 @@ public class RestUtilInit implements BeanDefinitionRegistryPostProcessor {
 //        Set<Class<?>> requests = new Reflections("com.lyq3").getTypesAnnotatedWith(Http.class);
 //        for (Class<?> cls : requests) {
 //            createProxyClass(cls);
+
 //        }
 //
 //    }这个类未完成，不应该实现BeanDefinitionRegistryPostProcessor，有时间再改
