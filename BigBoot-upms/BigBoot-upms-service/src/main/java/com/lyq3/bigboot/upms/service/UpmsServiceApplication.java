@@ -1,5 +1,6 @@
 package com.lyq3.bigboot.upms.service;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ComponentScan(basePackages = { "com.lyq3" })
 @ImportResource(locations = {"classpath:xmlConfig/*.xml"})
+@MapperScan("com.lyq3.bigboot.upms.dao")
 public class UpmsServiceApplication extends SpringBootServletInitializer {
     private static final Logger logger = LoggerFactory.getLogger(UpmsServiceApplication.class);
     public static void main(String[] args) {
