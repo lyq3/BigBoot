@@ -22,7 +22,7 @@ import java.util.Set;
 /**
  * 这个Bean创建时自动执行init方法 扫描工程里面属于带@Http注解的接口。
  */
-@Component
+//@Component
 public class RestUtilInit extends  ClassPathScanningCandidateComponentProvider{
 //    @Autowired
 //    RequestHandle requestHandle;

@@ -24,15 +24,13 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!--自研SwaggerUI-->
         <dependency>
-            <groupId>com.lyq3</groupId>
-            <artifactId>BigBoot-upms-service</artifactId>
+            <groupId>com.github.yq3</groupId>
+            <artifactId>vue-swager-ui</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lyq3</groupId>
-            <artifactId>BigBoot-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../BigBoot-config/src/main/resources/lib/vue-swager-ui-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
     </dependencies>
 
