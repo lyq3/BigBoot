@@ -11,5 +11,13 @@
 
     <artifactId>BigBoot-upms-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.lyq3</groupId>
+            <artifactId>BigBoot-upms-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

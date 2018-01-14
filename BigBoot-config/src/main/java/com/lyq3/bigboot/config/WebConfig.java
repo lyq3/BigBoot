@@ -13,14 +13,14 @@ import javax.servlet.DispatcherType;
 @Configuration
 public class WebConfig {
 
-    @Bean
-    public FilterRegistrationBean xssFilterRegistration() {
-        FilterRegistrationBean registration = new FilterRegistrationBean();
-        registration.setDispatcherTypes(DispatcherType.REQUEST);
-//        registration.setFilter(new XssFilter());
-//        registration.addUrlPatterns("/*");
-//        registration.setName("xssFilter");
-//        registration.setOrder(Integer.MAX_VALUE);
-        return registration;
-    }
+//    @Bean
+//    public FilterRegistrationBean xssFilterRegistration() {
+//        FilterRegistrationBean registration = new FilterRegistrationBean();
+//        registration.setDispatcherTypes(DispatcherType.REQUEST);
+////        registration.setFilter(new XssFilter());
+////        registration.addUrlPatterns("/*");
+////        registration.setName("xssFilter");
+////        registration.setOrder(Integer.MAX_VALUE);
+//        return registration;
+//    }
 }

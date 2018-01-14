@@ -169,6 +169,24 @@ public class UpmsUser extends Model<UpmsUser> {
 	}
 
 	@Override
+	public String toString() {
+		return "UpmsUser{" +
+				"userId=" + userId +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", salt='" + salt + '\'' +
+				", realname='" + realname + '\'' +
+				", nickname='" + nickname + '\'' +
+				", avatar='" + avatar + '\'' +
+				", phone='" + phone + '\'' +
+				", email='" + email + '\'' +
+				", sex=" + sex +
+				", status=" + status +
+				", createtime=" + createtime +
+				'}';
+	}
+
+	@Override
 	protected Serializable pkVal() {
 		return this.userId;
 	}
