@@ -19,6 +19,11 @@
         </dependency>
         <dependency>
             <groupId>com.lyq3</groupId>
+            <artifactId>BigBoot-config</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lyq3</groupId>
             <artifactId>BigBoot-upms-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

@@ -2,6 +2,8 @@ package com.lyq3.bigboot.upms.dao.entity;
 
 import java.util.Date;
 import com.baomidou.mybatisplus.activerecord.Model;
+import io.swagger.annotations.ApiModel;
+
 import java.io.Serializable;
 
 /**
@@ -12,7 +14,8 @@ import java.io.Serializable;
  * @author 卡卢比
  * @since 2018-01-06
  */
-public class UpmsUser extends Model<UpmsUser> {
+@ApiModel("用户实体")
+public class UpmsUser {
 
     private static final long serialVersionUID = 1L;
 
@@ -184,11 +187,6 @@ public class UpmsUser extends Model<UpmsUser> {
 				", status=" + status +
 				", createtime=" + createtime +
 				'}';
-	}
-
-	@Override
-	protected Serializable pkVal() {
-		return this.userId;
 	}
 
 }

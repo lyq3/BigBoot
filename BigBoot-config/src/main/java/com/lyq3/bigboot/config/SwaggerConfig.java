@@ -1,6 +1,7 @@
 package com.lyq3.bigboot.config;
 
 import com.google.common.base.Predicate;
+import com.lyq3.bigboot.common.base.UniteResult;
 import org.springframework.boot.autoconfigure.web.BasicErrorController;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -22,14 +23,14 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
-@ComponentScan(basePackages = {"com.lyq3"})
+@ComponentScan(basePackages = {"com.lyq3.bigboot"})
 public class SwaggerConfig {
     @Bean
     public Docket Api() {
         return new Docket(DocumentationType.SWAGGER_2)
 //                .groupName("Pro")
 //                .genericModelSubstitutes(DeferredResult.class)
-//                .genericModelSubstitutes(ResponseEntity.class)
+                .genericModelSubstitutes(UniteResult.class)
 //                .useDefaultResponseMessages(false)
 //                .forCodeGeneration(true)
 //                .pathMapping("/")// base，最终调用接口后会和paths拼接在一起
