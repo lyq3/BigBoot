@@ -8,7 +8,7 @@ import javax.servlet.DispatcherType;
 
 /**
  * Web配置类
- * @author Lyq
+ * @author 卡卢比
  */
 @Configuration
 public class WebConfig {

@@ -12,6 +12,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 阿里巴巴数据库连接池配置类
+ * @author 卡卢比
+ */
 @Configuration
 public class DruidConfig {
 

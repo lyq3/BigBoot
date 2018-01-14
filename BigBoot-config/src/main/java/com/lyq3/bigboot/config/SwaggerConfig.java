@@ -18,10 +18,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Swagger配置类
+ * @author 卡卢比
  */
 @Configuration
 @EnableSwagger2
-@ComponentScan(basePackages = {"com.cnct.web.controller"})
+@ComponentScan(basePackages = {"com.lyq3"})
 public class SwaggerConfig {
     @Bean
     public Docket Api() {

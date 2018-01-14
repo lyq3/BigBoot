@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
+/**
+ * PageHelper分页插件配置
+ * @author 卡卢比
+ */
 @Configuration
 public class PagehelperConf {
     @Bean

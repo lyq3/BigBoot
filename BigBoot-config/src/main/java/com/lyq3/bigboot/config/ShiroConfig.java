@@ -18,8 +18,7 @@ import java.util.Map;
 /**
  * Shiro配置类
  *
- * @author luoyunqiang
- * @date 2017-08-01
+ * @author 卡卢比
  */
 @Configuration
 public class ShiroConfig {
