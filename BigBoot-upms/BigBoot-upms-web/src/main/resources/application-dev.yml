@@ -12,7 +12,15 @@ spring:
         url: jdbc:mysql://182.61.60.110:3333/big-boot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
         username: bigBoot
         password: ENC(qiGXbSKkn9Lzf3pTrui2tMK0qlG0+3+V)
-
+    redis:
+            host: 182.61.60.110
+            password: redis_123456
+            port: 6379
+            pool:
+              max-idle: 100
+              min-idle: 1
+              max-active: 1000
+              max-wait: -1
 #Zookeeper连接信息
 zookeeper:
           url: 119.23.252.177
