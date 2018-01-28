@@ -15,7 +15,7 @@ import java.io.Serializable;
  * @since 2018-01-06
  */
 @ApiModel("用户实体")
-public class UpmsUser {
+public class UpmsUser extends Model<UpmsUser>{
 
     private static final long serialVersionUID = 1L;
 
@@ -189,4 +189,8 @@ public class UpmsUser {
 				'}';
 	}
 
+	@Override
+	protected Serializable pkVal() {
+		return null;
+	}
 }

@@ -12,32 +12,6 @@ spring:
         url: jdbc:mysql://182.61.60.110:3333/big-boot?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
         username: bigBoot
         password: ENC(qiGXbSKkn9Lzf3pTrui2tMK0qlG0+3+V)
-        druid:
-            initial-size: 10
-            max-active: 100
-            min-idle: 10
-            max-wait: 60000
-            pool-prepared-statements: true
-            max-pool-prepared-statement-per-connection-size: 20
-            time-between-eviction-runs-millis: 60000
-            min-evictable-idle-time-millis: 300000
-            validation-query: SELECT 1 FROM DUAL
-            test-while-idle: true
-            test-on-borrow: false
-            test-on-return: false
-            stat-view-servlet:
-                enabled: true
-                url-pattern: /druid/*
-                login-username: admin
-                login-password: 123456
-            filter:
-                stat:
-                    log-slow-sql: true
-                    slow-sql-millis: 1000
-                    merge-sql: true
-                wall:
-                    config:
-                        multi-statement-allow: true
 
 #Zookeeper连接信息
 zookeeper:
