@@ -75,5 +75,6 @@ public class RestUtilInit extends  ClassPathScanningCandidateComponentProvider{
 //        // 创建动态代理类
 //        Object proxy = Proxy.newProxyInstance(this.getClass().getClassLoader(), new Class<?>[]{cls}, handler);
 //        registerBean(cls.getName(), proxy);
+
     }
 }
