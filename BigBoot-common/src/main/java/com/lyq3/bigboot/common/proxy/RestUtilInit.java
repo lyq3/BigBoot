@@ -61,6 +61,7 @@ public class RestUtilInit extends  ClassPathScanningCandidateComponentProvider{
 
 
     private void createProxyClass(Class<?> cls) {
+
         System.err.println("\tcreate proxy for class:" + cls);
         // rest服务器相关信息
 //        final RestInfo restInfo = extractRestInfo(cls);
