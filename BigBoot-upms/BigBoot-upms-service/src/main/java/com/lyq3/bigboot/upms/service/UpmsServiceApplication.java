@@ -17,6 +17,8 @@ public class UpmsServiceApplication extends SpringBootServletInitializer {
     private static final Logger logger = LoggerFactory.getLogger(UpmsServiceApplication.class);
     public static void main(String[] args) {
         logger.info("\n===========upms-service开始启动========\n");
+
         SpringApplication.run(UpmsServiceApplication.class, args);
+
         logger.info("\n===========upms-service启动完成========\n");
     }}
